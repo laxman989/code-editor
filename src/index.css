@@ -1,0 +1,194 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pane {
+  display: flex;
+}
+
+.top-pane {
+  height: 50vh;
+  background-color: #161616;
+}
+
+.bottom-pane {
+  height: calc(50vh - 4rem);
+}
+
+.editor-container {
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.editor-container.collapse {
+  flex-grow: 0;
+}
+
+.editor-container.collapse .CodeMirror-scroll {
+  position: absolute;
+  overflow: hidden !important;
+}
+
+.open-close-btn {
+  margin-left: 1rem;
+  /* padding: 0.2rem; */
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  background: none;
+  color: #ffffff;
+  /* border: 1px solid rgb(255, 255, 255, 0.5); */
+  border: none;
+  border-radius: 0.1rem;
+  cursor: pointer;
+}
+
+.editor-title {
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #080707;
+  color: #ffffff;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+}
+
+.CodeMirror {
+  height: 100% !important;
+}
+
+
+.code-mirror-wrapper {
+  flex-grow: 1;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+  overflow: hidden;
+}
+
+
+/* NavigationBar */
+.navbar {
+  /* box-sizing: border-box; */
+  /* width: 100%; */
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+  background-color: #080707;
+  color: #ffffff;
+}
+.nav-1 {
+  display: flex;
+  align-items: center;
+  padding-inline: 1rem;
+  background-color: #080707;
+  color: #ffffff;
+}
+.nav-1 .logo {
+  height: 2rem;
+}
+.nav-1 .title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #e6d9e2;
+  margin: 0%;
+  margin-left: 0.5rem;
+}
+.nav-2 .user {
+  font-size: 1rem;
+}
+.nav-1 .edit-title-btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  display: block;
+  font-size: 0.9rem;
+  padding: 0.8rem 1.2rem;
+  margin-inline: 0.4rem;
+  background-color: #212c36;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #313f4d;
+}
+
+.signup-btn {
+  background-color: #33c457;
+  color: #080707;
+}
+.signup-btn:hover {
+  background-color: #208639;
+  color: #ffffff;
+}
+
+
+.link {
+  color:#ffffff;
+  text-decoration: none;
+}
+
+.input {
+  height: 2rem;
+  min-width: 20rem;
+}
+hr {
+  width: 22rem;
+}
+
+.auth-btn {
+  background-color: #33c457;
+  color: #080707;
+  width: 95%;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.auth-btn:hover {
+  background-color: #208639;
+  color: #ffffff;
+}
+
+.change-auth-type {
+  color: #4369e6;
+  text-decoration: none;
+}
+
+.google-btn{
+  width: 20rem;
+  margin-block: 1rem;
+}
+
+.auth-page {
+  background-color: #161616;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
