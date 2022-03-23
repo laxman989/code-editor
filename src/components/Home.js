@@ -1,14 +1,14 @@
 import React, {useState, useEffect} from "react";
 import Editor from "./Editor";
 import Navbar from "./Navbar";
-import useLocalStorage from "../hooks/useLocalStorage";
+import useSessionStorage from "../hooks/useSessionStorage";
 
 function Home() {
 
 
-  const [html, setHtml] = useLocalStorage('html', '');
-  const [css, setCss] = useLocalStorage('css', '');
-  const [js, setJs] = useLocalStorage('js', '');
+  const [html, setHtml] = useSessionStorage('html', '');
+  const [css, setCss] = useSessionStorage('css', '');
+  const [js, setJs] = useSessionStorage('js', '');
   const [srcDoc, setSrcDoc] = useState('');
 
   useEffect(() => {
